@@ -99,6 +99,11 @@ class Hijo : public Padre
     public:
     char letra;
 
+     Hijo(int num, char letra)
+    {
+        setLetra(letra);
+        setNum(num);
+    }
     char getLetra()
     {
         return letra;
@@ -106,11 +111,6 @@ class Hijo : public Padre
     void setLetra(char letra)
     {
         this->letra = letra;
-    }
-    Hijo(int num, char letra)
-    {
-        setLetra(letra);
-        setNum(num);
     }
 
 };
